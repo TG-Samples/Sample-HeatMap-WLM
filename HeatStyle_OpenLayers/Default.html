@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./Content/ol.css" type="text/css">
+    <link rel="stylesheet" href="Content/thinkgeo.openlayers.css" />
+    <style>
+        .map {
+            margin: 0;
+            padding: 0;
+            height: 80%;
+            width: 100%;
+        }
+    </style>
+    <title>OpenLayers 3 example</title>
+</head>
+<body>
+    <h2>HeatStyle-OpenLayers</h2>
+    <div id="map" class="map"></div>
+    <div id="mouse-position"></div>
+    <script src="./Scripts/ol.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var xyzSource = new ol.source.XYZ({
+            url: '/heatlayer/{z}/{x}/{y}',
+            maxZoom: 19
+        });
+
+        var map = new ol.Map({
+            target: 'map',
+            controls: ol.control.defaults().extend([new ol.control.MousePosition({
+                coordinateFormat: function (coord) {
+                    return ol.coordinate.toStringHDMS(coord);
+                },
+                className: 'custom-mouse-position',
+                target: document.getElementById('mouse-position'),
+                undefinedHTML: '&nbsp;'
+            })]),
+            layers: [
+                new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                }),
+                new ol.layer.Tile({
+                    source: xyzSource
+                })
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([-113.510742, 38.184228]),
+                zoom: 5
+            })
+        });
+    </script>
+</body>
+</html>

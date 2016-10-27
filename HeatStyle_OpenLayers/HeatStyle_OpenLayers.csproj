@@ -110,16 +110,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\ol.css" />
-    <Content Include="Content\thinkgeo.openlayers.css" />
-    <Content Include="default.htm" />
+    <Content Include="Default.html" />
     <Content Include="Global.asax" />
-    <Content Include="Images\ajax-loader.gif" />
-    <Content Include="Images\collapse.png" />
-    <Content Include="Images\desktop.png" />
-    <Content Include="Images\expend.png" />
-    <Content Include="Images\favicon.ico" />
-    <Content Include="Images\info.png" />
-    <Content Include="Images\layers.png" />
     <Content Include="Scripts\ol.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -138,6 +130,13 @@
     <Content Include="App_Data\usEarthquake.idx" />
     <Content Include="App_Data\usEarthquake.shp" />
     <Content Include="App_Data\usEarthquake.shx" />
+    <Content Include="App_Data\USStates-3857.dbf" />
+    <Content Include="App_Data\USStates-3857.ids" />
+    <Content Include="App_Data\USStates-3857.idx" />
+    <Content Include="App_Data\USStates-3857.prj" />
+    <Content Include="App_Data\USStates-3857.shp" />
+    <Content Include="App_Data\USStates-3857.shx" />
+    <None Include="Properties\PublishProfiles\file.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -145,9 +144,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -9,6 +9,7 @@ using System.Web.Http;
 using ThinkGeo.MapSuite.Drawing;
 using ThinkGeo.MapSuite.Layers;
 using ThinkGeo.MapSuite.Shapes;
+using ThinkGeo.MapSuite.Styles;
 using ThinkGeo.MapSuite.WebApi;
 
 namespace ThinkGeo.MapSuite.Samples
@@ -33,8 +34,13 @@ namespace ThinkGeo.MapSuite.Samples
             HeatLayer heatLayer = new HeatLayer(shapeFileFeatureSource);
             heatLayer.HeatStyle = new HeatStyle(10, 150, "MAGNITUDE", 0, 12, 100, DistanceUnit.Kilometer);
 
+            ShapeFileFeatureLayer usStatesLayer = new ShapeFileFeatureLayer(Path.Combine(baseDirectory, "USStates-3857.shp"));
+            usStatesLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle = new AreaStyle(new GeoPen(GeoColor.StandardColors.LightGray, 2), new GeoSolidBrush(GeoColor.FromArgb(50, GeoColors.LightYellow)));
+            usStatesLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
+
             LayerOverlay layerOverlay = new LayerOverlay();
             layerOverlay.Layers.Add(heatLayer);
+            layerOverlay.Layers.Add(usStatesLayer);
 
             return DrawTileImage(layerOverlay, z, x, y);
         }
