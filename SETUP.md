@@ -44,3 +44,13 @@
     
     ./smartgit/bin/smartgit.sh 
     ```
+
+# Add Local Nuget Source In MonoDevelop
+1. Download the new Nuget package and unpack it to your disk.
+2. Open MonoDevelop preference dialog and navigate to the NuGet source manager as following screenshot.
+![Preference](https://github.com/howardchn/Sample-HeatMap-WLM/blob/master/HeatStyle_OpenLayers/Content/NuGet-source-dialog.png?raw=true)
+3. Click the Add button and the add package source dialog shows. Enter the source name and the directory path that Nuget packages are exacted to.
+![Add Local Source](https://github.com/howardchn/Sample-HeatMap-WLM/blob/master/HeatStyle_OpenLayers/Content/NuGet-source-add.png?raw=true)
+4. Right click on the Packages solution folder in MonoDevelop likes screenshot bellow, then click restore button to restore the packages back or click Add Packages button to install new packages.  
+![Restore Packages](https://github.com/howardchn/Sample-HeatMap-WLM/blob/master/HeatStyle_OpenLayers/Content/NuGet-source-restore.png?raw=true)
+5. Press "F5" to launch the sample.
