@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./Content/ol.css" type="text/css">
+    <link rel="stylesheet" href="Content/thinkgeo.openlayers.css" />
+    <style>
+        .map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+    <title>OpenLayers 3 example</title>
+</head>
+<body>
+    <h2>HeatStyle-OpenLayers</h2>
+    <div id="map" class="map"></div>
+    <script src="./Scripts/ol.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var xyzSource = new ol.source.XYZ({
+            url: '/heatlayer/{z}/{x}/{y}',
+            maxZoom: 19
+        });
+        //xyzSource.tileLoadFunction = function (imageTile, src) {
+        //    imageTile.getImage().src = src + '?t=' + new Date().getTime();;
+        //};
+
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                    source: xyzSource
+                })
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([37.41, 8.82]),
+                zoom: 12,
+            })
+        });
+    </script>
+</body>
+</html>
