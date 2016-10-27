@@ -1,7 +1,7 @@
 # Heat Style Sample for WebAPI
 HeatStyle allows you to better visualize data by making areas of high concentration “hotter” using warmer colors and low density areas visually cooler. In order to run this project, you will need the development build 10.0.0.0 or later.
 
-![Screenshot](https://raw.githubusercontent.com/howardchn/Sample-OpenStreetMap-WLM/master/OpenStreetMap/Resources/Screenshot.jpg)
+![Screenshot](https://raw.githubusercontent.com/howardchn/Sample-HeatMap-WLM/master/screenshot.png)
 
 This guide will shows you how to depoly the WebAPI HeatStyle-WLO sample on Linux with Mono and debug with MonoDevelop.
 
