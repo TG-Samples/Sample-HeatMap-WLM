@@ -11,11 +11,11 @@
 
       sudo apt-get update
        ```
-1. To Install mod_mono, we will need to add a second repository to OS, issue following command in terminal. 
+  1. To Install mod_mono, we will need to add a second repository to OS, issue following command in terminal. 
 	```perl
     echo "deb http://download.mono-project.com/repo/debian wheezy-apache24-compat main" | sudo tee -a /etc/apt/sources.list.d/mono-xamarin.list
     ```
-1. Install the mono environment, please issue following commands line by line, this step will take us few minitues depend on the network.
+  1. Install the mono environment, please issue following commands line by line, this step will take us few minitues depend on the network.
     ```perl
     sudo apt-get install mono-devel
     
@@ -24,19 +24,19 @@
     sudo apt-get install referenceassemblies-pcl
     ```
     ***Notice***: Please enter **Y** when asking if you want to continue. *
-1. Install the IDE, MonoDevelop is recommend to develop on Linux. Run the following command to install **Mono Develop** on your computer.
+  1. Install the IDE, MonoDevelop is recommend to develop on Linux. Run the following command to install **Mono Develop** on your computer.
 	```perl
     sudo apt-get install monodevelop
     ```
-1. `new!` Then, to install the specific version of MonoDevelop that gives you a working ASP.NET add-in:
+  1. `new!` Then, to install the specific version of MonoDevelop that gives you a working ASP.NET add-in:
    ```perl
    sudo apt-get install monodevelop=5.10.0.871-0xamarin2
    ```
-1. `new!` To host the debug sample, install **XSP4**.
+  1. `new!` To host the debug sample, install **XSP4**.
    ```perl
    sudo apt-get install mono-xsp4
    ```
-1. Run `monodevelop` command in terminal to open MonoDevelop; Or we can click on left top corner of task bar to search **MonoDevelop** and run it. We can open Visual Studio solution file via **MonoDevelop**.
+  1. Run `monodevelop` command in terminal to open MonoDevelop; Or we can click on left top corner of task bar to search **MonoDevelop** and run it. We can open Visual Studio solution file via **MonoDevelop**.
  
 # Download Source code
 1. We've hosted the source code on github at [https://github.com/howardchn/Sample-HeatMap-WLM.git](https://github.com/howardchn/Sample-HeatMap-WLM.git). clone the repository to local by:
