@@ -24,11 +24,18 @@
     sudo apt-get install referenceassemblies-pcl
     ```
     ***Notice***: Please enter **Y** when asking if you want to continue. *
-
 1. Install the IDE, MonoDevelop is recommend to develop on Linux. Run the following command to install **Mono Develop** on your computer.
 	```perl
     sudo apt-get install monodevelop
     ```
+1. `new!` Then, to install the specific version of MonoDevelop that gives you a working ASP.NET add-in:
+   ```perl
+   sudo apt-get install monodevelop=5.10.0.871-0xamarin2
+   ```
+1. `new!` To host the debug sample, install **XSP4**.
+   ```perl
+   sudo apt-get install mono-xsp4
+   ```
 1. Run `monodevelop` command in terminal to open MonoDevelop; Or we can click on left top corner of task bar to search **MonoDevelop** and run it. We can open Visual Studio solution file via **MonoDevelop**.
  
 # Download Source code
@@ -46,7 +53,7 @@
     ```
 
 # Add Local Nuget Source In MonoDevelop
-1. Download the new Nuget package and unpack it to your disk.
+1. Download the new Nuget package (10.0.300.2) and unpack it to your disk. If you cannot find this version, try to change the package version in the package.config from 10.0.300.2 to a specific version you have.
 2. Open MonoDevelop preference dialog and navigate to the NuGet source manager as following screenshot.
 ![Preference](https://github.com/howardchn/Sample-HeatMap-WLM/blob/master/HeatStyle_OpenLayers/Content/NuGet-source-dialog.png?raw=true)
 3. Click the Add button and the add package source dialog shows. Enter the source name and the directory path that Nuget packages are exacted to.  
