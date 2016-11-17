@@ -73,19 +73,19 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.321.5\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.322.3\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.Layers.Heat, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Heat.10.0.321.5\lib\net40\ThinkGeo.MapSuite.Layers.Heat.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Heat.10.0.322.3\lib\net40\ThinkGeo.MapSuite.Layers.Heat.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.Layers.ShapeFile, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.321.5\lib\net40\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.322.3\lib\net40\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.WebApi, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteWebForWebApi-BareBone.10.0.321.5\lib\net40\ThinkGeo.MapSuite.WebApi.dll</HintPath>
+      <HintPath>..\packages\MapSuiteWebForWebApi-BareBone.10.0.322.3\lib\net40\ThinkGeo.MapSuite.WebApi.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
