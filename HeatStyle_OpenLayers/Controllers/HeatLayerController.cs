@@ -39,8 +39,9 @@ namespace ThinkGeo.MapSuite.Samples
             usStatesLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
 
             LayerOverlay layerOverlay = new LayerOverlay();
-            layerOverlay.Layers.Add(heatLayer);
+
             layerOverlay.Layers.Add(usStatesLayer);
+            layerOverlay.Layers.Add(heatLayer);
 
             return DrawTileImage(layerOverlay, z, x, y);
         }

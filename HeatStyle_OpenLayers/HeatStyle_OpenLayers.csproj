@@ -38,7 +38,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\net45\GeoAPI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net45\NetTopologySuite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net45\PowerCollections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -56,29 +72,24 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678">
-      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\net45\GeoAPI.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
-    <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1">
-      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net45\NetTopologySuite.dll</HintPath>
+    <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.321.5\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5">
-      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\net45\PowerCollections.dll</HintPath>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Heat, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Heat.10.0.321.5\lib\net40\ThinkGeo.MapSuite.Layers.Heat.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.300.2\lib\net40\ThinkGeo.MapSuite.dll</HintPath>
+    <Reference Include="ThinkGeo.MapSuite.Layers.ShapeFile, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.321.5\lib\net40\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Heat, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Heat.10.0.300.2\lib\net40\ThinkGeo.MapSuite.Layers.Heat.dll</HintPath>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.ShapeFile, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.300.2\lib\net40\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.WebApi, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\MapSuiteWebForWebApi-BareBone.10.0.300.2\lib\net40\ThinkGeo.MapSuite.WebApi.dll</HintPath>
+    <Reference Include="ThinkGeo.MapSuite.WebApi, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteWebForWebApi-BareBone.10.0.321.5\lib\net40\ThinkGeo.MapSuite.WebApi.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +134,7 @@
     <Content Include="App_Data\USStates-3857.prj" />
     <Content Include="App_Data\USStates-3857.shp" />
     <Content Include="App_Data\USStates-3857.shx" />
+    <Content Include="ThinkGeo.MapSuite.license" />
     <None Include="Properties\PublishProfiles\file.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -162,8 +174,6 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
-  <Import Project="..\packages\MapSuiteDependency-GdalGeoRasterProjection.10.0.0.0\build\net40\MapSuiteDependency-GdalGeoRasterProjection.targets" Condition="Exists('..\packages\MapSuiteDependency-GdalGeoRasterProjection.10.0.0.0\build\net40\MapSuiteDependency-GdalGeoRasterProjection.targets')" />
-  <Import Project="..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\build\net40\MapSuiteDependency-MicrosoftSqlServerTypes.targets" Condition="Exists('..\packages\MapSuiteDependency-MicrosoftSqlServerTypes.10.0.0\build\net40\MapSuiteDependency-MicrosoftSqlServerTypes.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
